@@ -89,7 +89,7 @@ def apply_request(system_id):
         while True:
             Github_email = input("請輸入您欲使用的Github帳號：\n")
             Answer = input("確定使用 "+Github_email+" 申請，請輸入Y，或輸入任意鍵重新輸入：\n")
-            if Answer == 'Y':
+            if Answer == 'Y' or 'y':
                 break  
         class1 = 'GitHub'
         perm_name = 'Github使用/異動申請單'
@@ -172,7 +172,7 @@ if __name__ =="__main__":
             apply_request('TESTRAIL_ID')
             apply_request('GIT_HUB_MOD')    
             break
-        if item == 'Q':
+        if item == 'Q' or 'q':
             break        
     os.system('pause')
     
